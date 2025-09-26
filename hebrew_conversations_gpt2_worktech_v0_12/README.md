@@ -1,5 +1,5 @@
-# Hebrew Conversations — Casual (youth slang) (v0.1)
-Синтетический разговорный датасет на иврите в стиле: friends, group_chat.
+# Hebrew Conversations — Work & Tech (v0.1)
+Синтетический разговорный датасет на иврите в стиле: standup, debug.
 Формат: JSONL, одна строка — один диалог: {"dialogue":[{role,text}...], "meta":{...}}.
 Лицензия: CC BY 4.0.
 

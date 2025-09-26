@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "dialogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "text"
+        ]
+      },
+      "minItems": 2
+    },
+    "meta": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "dialogue"
+  ]
+}

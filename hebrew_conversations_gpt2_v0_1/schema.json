@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "properties": {
+    "dialogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "user",
+              "assistant",
+              "speaker1",
+              "speaker2",
+              "system"
+            ]
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "role",
+          "text"
+        ]
+      },
+      "minItems": 2
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "style": {
+          "type": "string"
+        },
+        "topic": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "dialogue"
+  ]
+}
